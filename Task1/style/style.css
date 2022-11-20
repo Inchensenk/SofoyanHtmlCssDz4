@@ -1,0 +1,61 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.hasy {
+    /* Круг для часов */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5em;
+    border: 2px solid #33e2e2;
+    border-radius: 50%;
+}
+
+
+.has {
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    left: 50px;
+    top: 20px;
+    background: #33e2e2;
+    animation: hov 480s infinite steps(480);
+    transform-origin: 0 29px;
+}
+
+.sekundes {
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    left: 51px;
+    top: 4px;
+    background: #33e2e2;
+    animation: sec 60s infinite steps(60);
+    transform-origin: 0 45px;
+}
+
+@keyframes sec {
+    100% {
+        transform: rotate(360deg);
+        /* Стрелка делает полный круг */
+    }
+}
+
+@keyframes hov {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sentr {
+    /* Центр циферблата */
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 46.5px;
+    left: 48.5px;
+    background: #33e2e2;
+}
